@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main {
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int personasInformadas=sc.nextInt();
+Factorial SD = new Factorial();
+
+System.out.println(SD.GenteInformada(personasInformadas));
+}
+
+}
+
+
+class Factorial {
+public int GenteInformada(int n){
+if(n==0){
+return 1;
+}else{
+return n*GenteInformada(n-1)+1;
+}
+}
+
+}
